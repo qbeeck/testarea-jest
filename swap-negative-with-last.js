@@ -1,6 +1,6 @@
 const swapNegativeWithLast = (array) => {
   if (!Array.isArray(array)) throw Error('Is not array');
-  if (array.length === 0) return [];
+  if (array.length === 0) throw Error('Array is empty');
 
   let maxNegative = Number.NEGATIVE_INFINITY;
   let maxNegativeIndex = -1;

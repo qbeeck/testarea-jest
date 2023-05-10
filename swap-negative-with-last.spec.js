@@ -9,8 +9,8 @@ describe('swapNegativeWithLast', () => {
     expect(() => swapNegativeWithLast(123)).toThrow('Is not array');
   });
 
-  it('should return an empty array if argument is an empty array', () => {
-    expect(swapNegativeWithLast([])).toEqual([]);
+  it('should throw an error if array is empty', () => {
+    expect(() => swapNegativeWithLast([])).toThrow('Array is empty');
   });
 
   it('should throw an error if any element in the array is not a number', () => {
